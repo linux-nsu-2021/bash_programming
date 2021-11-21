@@ -1,0 +1,12 @@
+#!/bin/bash
+
+
+if [[ -e $1 ]]
+then echo "Error: file $1 already exists"
+else
+	touch $1
+	for ((i = 0; i < $3; i++))       
+{ echo "$2" >> $1  
+}
+
+fi
